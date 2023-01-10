@@ -2,8 +2,7 @@
 {{ $height := .height | default 25 }}
 {{ $color := .color | default "bg-success" }}
 {{ if not (isset . "color") }}
-  {{ if lt .val 3 }}
-    {{ $color = "bg-danger" }}
+  {{ if lt .val 3 }}{{ $color = "bg-danger" }}
   {{ else if lt .val 4 }}
     {{ $color = "bg-warning" }}
   {{ end }}
