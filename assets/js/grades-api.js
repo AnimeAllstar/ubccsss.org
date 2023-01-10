@@ -5,7 +5,7 @@
   }
 
   function addDescription(list, term, details) {
-    const dt = document.createElement("dt");
+    const dt = document.createElement('dt')
     const dd = document.createElement("dd");
     dt.className = "col-sm-3";
     dt.textContent = term;
